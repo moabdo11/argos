@@ -37,11 +37,11 @@ var json = {
                     "type": "rating",
                     "name": "nps_score",
                     "title": "Would you recommend Target to a friend or family member?",
-                    "isRequired": true,
+                    "isRequired": false,
                     "rateMin": 0,
                     "rateMax": 10,
-                    "minRateDescription": "(Most unlikely)",
-                    "maxRateDescription": "(Most likely)"
+                    "minRateDescription": "(Unlikely)",
+                    "maxRateDescription": "(Definitely)"
                 }, 
             ]
         }
