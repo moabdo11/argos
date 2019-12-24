@@ -23,10 +23,10 @@ var json = {
     "completedHtmlOnCondition": [
         {
             "expression": "{nps_score} > 8",
-            "html": "<h3>Thank you for your feedback.</h3> <h5>We glad that you love our product. Your ideas and suggestions will help us to make our product even better!</h5>"
+            "html": "<h3>Thank you for your feedback.</h3> <h5>We're glad you love us. Your ideas and suggestions will help us make Target even better!</h5>"
         }, {
             "expression": "{nps_score} < 7",
-            "html": "<h3>Thank you for your feedback.</h3> <h5> We are glad that you share with us your ideas.We highly value all suggestions from our customers. We do our best to improve the product and reach your expectation.</h5>\n"
+            "html": "<h3>Thank you for your feedback.</h3> <h5> Thanks for submitting! We highly value all suggestions from our customers.</h5>\n"
         }
     ],
     "pages": [
