@@ -19,13 +19,13 @@
 } */
 
 .App-header {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
 .App-link {
@@ -40,3 +40,18 @@
     transform: rotate(360deg);
   }
 } */
+
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.item-details {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+
