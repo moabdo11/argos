@@ -51,7 +51,7 @@ class Barcode extends Component {
       );
     } else if (this.props.renderer === 'img') {
       return (
-        <img ref="renderElement" />
+        <img className="barcode" ref="renderElement" />
       );
     }
   }
@@ -82,8 +82,8 @@ Barcode.propTypes = {
 Barcode.defaultProps = {
   format: 'CODE128',
   renderer: 'svg',
-  width: 1.2,
-  height: 75,
+  width: 0.9,
+  height: 65,
   displayValue: true,
   fontOptions: '',
   font: 'monospace',
@@ -93,7 +93,7 @@ Barcode.defaultProps = {
   fontSize: 20,
   background: '',
   lineColor: '#000000',
-  margin: 10,
+  margin: 50,
 };
 
 export default Barcode;

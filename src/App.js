@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import Date from './components/Date';
-import brandlogo from '../src/target-logo@logotyp.us.svg';
+import brandlogo from '../src/target-logo.svg';
 import Barcode from './components/Barcode';
 import StoreDetails from './components/StoreDetails';
 import TransactionDetails from './components/TransactionDetails';
+import Offer from './components/Offer';
 
 import './App.css';
 import SurveyReceipt from './components/Survey';
+
+
 
 class App extends Component  {
 
@@ -26,13 +29,13 @@ class App extends Component  {
 
 render () {
     return (
-      <div className="App">
+      <div className="App container-fluid">
         <header className="App-header">
           <img src={brandlogo} className="App-logo" alt="logo" />
 
           <StoreDetails storeLocation="EVERETT" phoneNumber="617-420-0000"></StoreDetails>
           <Date />
-          <Barcode
+          <Barcode 
           value={this.state.value}
           width={this.state.width}
           height={this.state.height}
@@ -59,9 +62,13 @@ render () {
             itemNumber="245070170"
             itemName="UPUP ADHESIV"
             itemSubtotal="$1.89"
+            transactionTax="T = MA TAX 6.2500% on"
+            item
            
           />
         </main>
+        <hr className="divider"></hr>
+        <Offer />
         
         <div className="surveyjs">
           <SurveyReceipt />
