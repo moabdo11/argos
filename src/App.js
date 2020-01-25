@@ -63,12 +63,19 @@ render () {
             itemName="UPUP ADHESIV"
             itemSubtotal="$1.89"
             transactionTax="T = MA TAX 6.2500% on"
-            item
+            itemTotal="$2.01"
+            taxAmount="$0.12"
            
           />
         </main>
         <hr className="divider"></hr>
         <Offer />
+
+        <hr className="divider"></hr>
+        <img src={brandlogo} className="App-logo" alt="logo" />
+        <StoreDetails storeLocation="EVERETT" phoneNumber="617-420-0000"></StoreDetails>
+        <Date />
+        <hr className="divider"></hr>
         
         <div className="surveyjs">
           <SurveyReceipt />

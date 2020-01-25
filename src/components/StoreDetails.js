@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 const StoreDetails = props    => {
     const {storeLocation, phoneNumber} = props 
     return (
-        <div>
+        <div className="store-details">
             <p>{storeLocation} - {phoneNumber}</p>
         </div>
     )
